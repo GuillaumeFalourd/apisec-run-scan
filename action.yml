@@ -9,16 +9,16 @@ inputs:
   apisec-password:
     description: 'The Password of the APIsec user with which the scans will be executed'
     required: true
-    default: ''  
-  apisec-scan-job:  
+    default: ''
+  apisec-scan-job:
     description: 'The id of the scan job to run'
     required: true
     default: ''
-  apisec-region:  
+  apisec-region:
     description: 'The location the scan will be executed in'
     required: true
     default: 'SUPER_1'
-  apisec-environment:  
+  apisec-environment:
     description: 'The id of the environment to run'
     required: true
     default: ''

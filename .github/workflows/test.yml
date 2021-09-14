@@ -1,0 +1,19 @@
+
+name: Testing-Scan
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: apisec-run-scan
+        id: scan
+        uses: GuillaumeFalourd/apisec-run-scan@master
+        with:
+          apisec-username: "xxxxx"
+          apisec-password: "xxxxx"
+          apisec-scan-job: "xxxxx"
+          apisec-region: "xxxxx"
+          apisec-environment: "xxxxx"
+          apisec-project: "xxxxx"
+      - name: Hello World
+        run: echo Hello World
