@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: apisec-run-scan
         id: scan
-        uses: GuillaumeFalourd/apisec-run-scan@v1.0.0
+        uses: GuillaumeFalourd/apisec-run-scan@v1.0.1
         with:
           apisec-username: "xxxxx"
           apisec-password: "xxxxx"
